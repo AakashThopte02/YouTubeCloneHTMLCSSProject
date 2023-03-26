@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Magic</title>
+  </head>
+  <body>
+    <div
+      style="
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        id="box"
+        style="
+          text-align: center;
+          background-color: blue;
+          height: 200px;
+          display: inline-block;
+        "
+      >
+        <h3 class="color_box">Hey, is my color changing?</h3>
+      </div>
+      <button id="btn" style="max-width: 100px" onclick="changeColor()">
+        Chnage color
+      </button>
+    </div>
+  </body>
+  <script>
+    var x = Math.round(Math.random() * 256);
+    var y = Math.round(Math.random() * 256);
+    var z = Math.round(Math.random() * 256);
+    var color = "rgb(" + x + "," + y + "," + z + ")";
+    function changeColor() {
+      document.getElementById("box").style.backgroundColor = color;
+    }
+  </script>
+</html>

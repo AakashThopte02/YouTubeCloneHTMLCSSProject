@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@100;200;300;400;600;900&family=Roboto:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.container {
+  display: flex;
+}
+aside {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  font-weight: 600;
+  height: 400px;
+}
+.left_icons {
+  margin-bottom: 20px;
+}
+.left_icons i {
+  font-size: 22px;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+.left_icons:hover {
+  cursor: pointer;
+  color: blue;
+}
+.left_icons p {
+  font-size: 10px;
+}
+header {
+  min-width: 94vw;
+}
+.stick_top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.upper_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+.left_side img {
+  width: 80px;
+  position: relative;
+  right: 90px;
+}
+.middle_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle_side input {
+  width: 400px;
+  padding: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 0.5px solid #c5adad;
+  font-size: 13px;
+}
+.middle_side input:focus {
+  outline-color: blue;
+}
+.middle_side i {
+  font-size: 20px;
+  border: 1px solid #c5adad;
+  color: #000;
+  padding: 9.3px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(235, 231, 225);
+}
+.middle_side button {
+  all: unset;
+}
+.middle_side i:hover {
+  cursor: pointer;
+  background-color: rgb(238, 225, 225);
+}
+.right_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.right_side i:hover {
+  cursor: pointer;
+  color: blue;
+}
+.right_side i:last-child:hover {
+  cursor: default;
+}
+.pic img {
+  width: 25px;
+  border-radius: 50%;
+}
+.options {
+  background-color: #fff;
+  display: flex;
+  font-size: 10px;
+  font-weight: 500;
+  gap: 30px;
+  padding: 5px 10px;
+}
+.options div {
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.options .current {
+  background-color: #000;
+  color: #fff;
+  margin-left: 30px;
+}
+.options .next:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+.bottom_section {
+  background-color: rgb(244, 236, 236);
+  min-height: 83.6vh;
+  padding: 10px;
+}
+.channel {
+  max-width: 300px;
+  overflow: hidden;
+  padding: 10px;
+}
+.channel img {
+  max-width: 270px;
+  border-radius: 10px;
+}
+.channel:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.content {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -30px;
+}
+.content i {
+  font-size: 15px;
+  margin-left: 30px;
+}
+.content h2 {
+  font-size: 20px;
+}
+.content .pic i img {
+  float: left;
+}
+.fa-sharp {
+  visibility: hidden;
+}
+.channel:hover .fa-sharp {
+  visibility: visible;
+}
+.writer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+  gap: 3px;
+  font-size: 15px;
+}
+.status {
+  display: flex;
+  font-size: 15px;
+  column-gap: 30px;
+}
+.channels_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 30px;
+}
+.channel:hover .watch {
+  color: #fff;
+  transform: translateY(-150px);
+}
+.watch {
+  padding: 5px;
+  color: rgb(244, 236, 236);
+  font-size: 25px;
+  position: relative;
+  left: 235px;
+  transition: 0.00001s ease-in;
+  transform: translateY(0px);
+}
